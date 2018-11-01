@@ -25,7 +25,7 @@ class DATTools:
         return 'deter_public.shp'
 
     def writeNewShapeFile(self, filename, outputName):
-        print("Criando Shapefile com os dados selecionados...")
+        print("\nCriando Shapefile com os dados selecionados...")
         try:
             sf = shapefile.Reader(filename)
             newShp = shapefile.Writer(outputName, shapeType=5)
